@@ -40,7 +40,10 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;
     for (let round = 0; round < 5; round++) {
-        let playerSelection = prompt("What's your choice?")
+        let playerSelection = prompt("What's your choice?").toLowerCase();
+        while (playerSelection !== "rock" && playerSelection !=="paper" && playerSelection !=="scissors"){
+            playerSelection = prompt("What's your choice?").toLowerCase();
+        }
         let computerSelection = getComputerChoice()
         let result = playRound(playerSelection, computerSelection);
 
