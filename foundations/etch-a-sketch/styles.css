@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+#container div {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    border: .5px solid black;
+    box-sizing: border-box;
+}
